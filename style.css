@@ -365,6 +365,138 @@ a.navbar-item:hover {
     font-family: hkmedium;
 }
 
+/* ---------------------------------- TESTIMONIALS ---- */
+.testimonials {
+    background-image: url(img/home/city.jpg);
+    background-position: center center;
+    width: 100%;
+    height: auto;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.testimonial-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    font-family: hklightlegacy;
+}
+
+.testimonial-name {
+    font-size: 32px;
+    margin: 15px 0;
+}
+
+.testimonial-item p {
+    width: 460px;
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.testimonials .web-title {
+    color: white;
+    padding: 50px 0 0 50px;
+}
+
+.testimonials .web-title span {
+    font-family: hklightlegacy;
+}
+
+.testimonial-img {
+    width: 440px;
+    height: 550px;
+}
+
+.testimonial1 {
+    background-image: url(img/home/testimonial1.jpg);
+}
+
+.testimonial2 {
+    background-image: url(img/home/testimonial2.jpg);
+    background-position: center center;
+}
+
+.testimonial3 {
+    background-image: url(img/home/testimonial3.jpg);
+}
+
+.arrow-box {
+    border: 1px solid white;
+    width: fit-content;
+    padding: 15px;
+    transition: all .3s ease;
+    cursor: pointer;
+    position: absolute;
+}
+
+.arrow-box:hover {
+    background-color: white;
+}
+
+.arrow-box-right {
+    top: 340px;
+    left: 1250px;
+}
+
+.arrow-box-left {
+    top: 340px;
+    left: 600px;
+}
+
+.arrow-box-left:hover > div {
+    background-image: url(img/home/arrow-left\ -active.svg);
+}
+
+.arrow-box-right:hover > div {
+    background-image: url(img/home/arrow-right-active.svg);
+}
+
+.arrow-right {
+    background-image: url(img/home/arrow-right.svg);
+    width: 20px;
+    height: 38px;
+}
+
+.arrow-left {
+    background-image: url(img/home/arrow-left.svg);
+    width: 20px;
+    height: 38px;
+}
+
+.glider-dot {
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 0;
+    width: 50px;
+    height: 5px;
+}
+
+.glider-dot.active {
+    background-color: white;
+}
+
+.testimonials-dots {
+    padding-bottom: 50px;
+}
+
+/* ---------------------------------- NEWSLETTER ---- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media only screen and (max-width: 1530px) {
     .navbar {
         width: 100%;
