@@ -389,6 +389,7 @@ a.navbar-item:hover {
 .testimonial-name {
     font-size: 32px;
     margin: 15px 0;
+    color: white;
 }
 
 .testimonial-item p {
@@ -396,6 +397,7 @@ a.navbar-item:hover {
     font-size: 16px;
     text-align: center;
     margin-bottom: 30px;
+    color: white;
 }
 
 .testimonials .web-title {
@@ -807,6 +809,189 @@ iframe {
 }
 
 /* ---------------------------------- SHOP ---- */
+.shop {
+    width: 1530px;
+    height: auto;
+    margin: auto;
+    font-family: hklightlegacy;
+    padding-top: 70px;
+}
+
+.filters {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.categories-container {
+    display: flex;
+    align-items: center;
+    color: #808080;
+}
+
+.categories-item {
+    font-size: 21px;
+    margin-right: 80px;
+    cursor: pointer;
+}
+
+.active {
+    color: black;
+    padding-bottom: 2px;
+    border-bottom: 1px solid black;
+}
+
+.categories-item:last-child {
+    margin: 0;
+}
+
+.search-container,
+.filter-part,
+.search-part {
+    display: flex;
+    align-items: center;
+    font-size: 21px;
+}
+
+.filter-part,
+.search-part {
+    cursor: pointer;
+}
+
+.filter-part {
+    margin-right: 40px;
+}
+
+.filter-img {
+    background-image: url(img/shop/filter.svg);
+    width: 23px;
+    height: 23px;
+    margin-right: 10px;
+}
+
+.search-img {
+    background-image: url(img/shop/magnifying-glass.svg);
+    width: 23px;
+    height: 23px;
+    margin-right: 10px;
+}
+
+.products-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 60px;
+}
+
+.product-zoom {
+    overflow: hidden;
+}
+
+.product-zoom:hover > .product-img {
+    transform: scale(1.1);
+}
+
+.products-item {
+    font-size: 18px;
+    margin: 0 15px 40px 15px;
+}
+
+.product-img {
+    width: 347px;
+    height: 430px;
+    transition: all .5s ease;
+}
+
+.product-name {
+    color: #808080;
+    margin: 15px 0 8px;
+}
+
+.product-price {
+    color: black;
+}
+
+.product-1 {
+    background-image: url(img/shop/shop9.jpg);
+}
+
+.product-2 {
+    background-image: url(img/shop/shop2.jpg);
+}
+
+.product-3 {
+    background-image: url(img/shop/shop3.jpg);
+}
+
+.product-4 {
+    background-image: url(img/shop/shop4.jpg);
+}
+
+.product-5 {
+    background-image: url(img/shop/shop5.jpg);
+}
+
+.product-6 {
+    background-image: url(img/shop/shop8.jpg);
+}
+
+.product-7 {
+    background-image: url(img/shop/shop11.jpg);
+}
+
+.product-8 {
+    background-image: url(img/shop/shop6.jpg);
+}
+
+.product-9 {
+    background-image: url(img/shop/shop1.jpg);
+}
+
+.product-10 {
+    background-image: url(img/shop/shop10.jpg);
+}
+
+.product-11 {
+    background-image: url(img/shop/shop12.jpg);
+}
+
+.product-12 {
+    background-image: url(img/shop/shop15.jpg);
+}
+
+.product-13 {
+    background-image: url(img/shop/shop13.jpg);
+}
+
+.product-14 {
+    background-image: url(img/shop/shop14.jpg);
+}
+
+.product-15 {
+    background-image: url(img/shop/shop7.jpg);
+}
+
+.product-16 {
+    background-image: url(img/shop/shop16.jpg);
+}
+
+.load-btn {
+    color: white;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    width: 230px;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-family: hklightlegacy;
+    cursor: pointer;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 15px;
+}
 
 @media only screen and (max-width: 1530px) {
     .navbar {
