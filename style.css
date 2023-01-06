@@ -834,11 +834,11 @@ iframe {
     font-size: 21px;
     margin-right: 80px;
     cursor: pointer;
+    border-bottom: 1px solid white;
+    transition: all .5s ease;
 }
 
 .active {
-    color: black;
-    padding-bottom: 2px;
     border-bottom: 1px solid black;
 }
 
@@ -882,6 +882,7 @@ iframe {
     justify-content: center;
     flex-wrap: wrap;
     padding-top: 60px;
+    transition: all .5 ease;
 }
 
 .product-zoom {
@@ -892,9 +893,25 @@ iframe {
     transform: scale(1.1);
 }
 
+.show-product {
+    animation-name: showAnimation;
+    animation-duration: .6s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+}
+
+@keyframes showAnimation {
+    from {
+        opacity: 0;
+    } to {
+        opacity: 1;
+    }
+}
+
 .products-item {
     font-size: 18px;
     margin: 0 15px 40px 15px;
+    transition: all .5 ease;
 }
 
 .product-img {

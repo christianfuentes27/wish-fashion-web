@@ -13,14 +13,28 @@ function markActive(target) {
     target.classList.add('active');
 }
 
-function filterProducts(dataFilter) {
+function setDisplayNone() {
     products.forEach(product => {
-        if (dataFilter == null) {
+        product.style.display = "none";
+    });
+}
+
+function filterProducts(dataFilter) {
+    setDisplayNone();
+    products.forEach(async product => {
+        if (product.getAttribute('data-filter') == dataFilter || dataFilter == null) {
             product.style.display = "block";
-        } else if (product.getAttribute('data-filter') != dataFilter) {
-            product.style.display = "none";
-        } else {
-            product.style.display = "block";
+            await setAnimation(product);
+            product.classList.remove('show-product');
         }
+    });
+}
+
+function setAnimation(product) {
+    return new Promise(resolve => {
+        product.classList.add('show-product');
+        setTimeout(() => {
+            resolve();
+        }, 550);
     });
 }
