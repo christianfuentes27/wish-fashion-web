@@ -1,10 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;500&display=swap');
 
-html, body {
+html,
+body {
     height: 100%;
     margin: 0;
     padding: 0;
     -webkit-tap-highlight-color: transparent;
+    overflow-x: hidden;
 }
 
 @font-face {
@@ -99,9 +101,9 @@ html, body {
     margin: 0 50px;
 }
 
-a.navbar-item:hover {
+a.navbar-item:hover,
+a.navbar-item:focus {
     background-color: transparent;
-    color: white;
 }
 
 .hero-title {
@@ -119,13 +121,13 @@ a.navbar-item:hover {
 }
 
 .home-title {
-    top: 270px;
-    right: 250px;
+    top: 180px;
+    right: 50px;
 }
 
 .home-hero-btn {
     font-family: hklight;
-    font-size: 17px;
+    font-size: 18px;
     width: 240px;
     height: 70px;
     border: 1px solid white;
@@ -135,8 +137,8 @@ a.navbar-item:hover {
     text-transform: uppercase;
     color: white;
     position: absolute;
-    top: 575px;
-    right: 250px;
+    top: 475px;
+    right: 50px;
     cursor: pointer;
     transition: all .3s ease-in-out;
 }
@@ -182,9 +184,9 @@ a.navbar-item:hover {
 }
 
 .content-detail p {
-   width: 500px;
-   margin-top: 50px;
-   font-size: 21px;
+    width: 500px;
+    margin-top: 50px;
+    font-size: 21px;
 }
 
 .content-detail p span {
@@ -319,11 +321,11 @@ a.navbar-item:hover {
 }
 
 .watches-img p {
-    margin-left: 20px; 
+    margin-left: 20px;
 }
 
 .clothes-img p {
-    margin-right: 41px; 
+    margin-right: 41px;
 }
 
 .clothes-img .over-img {
@@ -455,11 +457,11 @@ a.navbar-item:hover {
     left: 600px;
 }
 
-.arrow-box-left:hover > div {
+.arrow-box-left:hover>div {
     background-image: url(img/home/arrow-left\ -active.svg);
 }
 
-.arrow-box-right:hover > div {
+.arrow-box-right:hover>div {
     background-image: url(img/home/arrow-right-active.svg);
 }
 
@@ -894,7 +896,7 @@ iframe {
     overflow: hidden;
 }
 
-.product-zoom:hover > .product-img {
+.product-zoom:hover>.product-img {
     transform: scale(1.1);
 }
 
@@ -908,7 +910,9 @@ iframe {
 @keyframes showAnimation {
     from {
         opacity: 0;
-    } to {
+    }
+
+    to {
         opacity: 1;
     }
 }
@@ -1133,7 +1137,7 @@ iframe {
 .read-btn:hover::after {
     content: '';
     width: 60px;
-}   
+}
 
 .pagination {
     display: flex;
@@ -1283,7 +1287,11 @@ iframe {
     border: 1px solid #808080;
 }
 
+/* -------------------------------------------------------------------- MEDIA QUERYS ---- */
+
 @media only screen and (max-width: 1530px) {
+
+    /* ---------------------------------- NAVBAR ---- */
     .navbar {
         width: 100%;
     }
@@ -1291,10 +1299,50 @@ iframe {
     .logo {
         padding-left: 30px;
     }
+
+    /* ---------------------------------- HOME HERO ---- */
+    .hero-content {
+        width: 100%;
+    }
+
+    .home-hero {
+        background-position: 60% 0;
+    }
 }
 
 @media only screen and (max-width: 1024px) {
+
+    /* ---------------------------------- NAVBAR ---- */
     .navbar-end a {
         color: black;
+    }
+
+    /* ---------------------------------- HOME HERO ---- */
+    .hero-content {
+        width: 100%;
+    }
+
+    .hero-title {
+        font-size: 70px;
+        line-height: 90px;
+    }
+
+    .home-title {
+        top: 400px;
+        right: unset;
+        left: 30px;
+    }
+
+    .home-hero-btn {
+        font-size: 16px;
+        width: 200px;
+        height: 60px;
+        top: 630px;
+        right: unset;
+        left: 40px;
+    }
+
+    .home-hero {
+        background-position: 42% 30%;
     }
 }

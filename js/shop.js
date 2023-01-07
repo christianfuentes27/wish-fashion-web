@@ -25,7 +25,6 @@ function filterProducts(dataFilter) {
         if (product.getAttribute('data-filter') == dataFilter || dataFilter == null) {
             product.style.display = "block";
             await setAnimation(product);
-            product.classList.remove('show-product');
         }
     });
 }
@@ -34,7 +33,7 @@ function setAnimation(product) {
     return new Promise(resolve => {
         product.classList.add('show-product');
         setTimeout(() => {
-            resolve();
+            resolve(product.classList.remove('show-product'));
         }, 550);
     });
 }
