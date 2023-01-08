@@ -6,7 +6,6 @@ body {
     margin: 0;
     padding: 0;
     -webkit-tap-highlight-color: transparent;
-    overflow-x: hidden;
 }
 
 @font-face {
@@ -721,6 +720,7 @@ td:has(> img) {
     position: relative;
 }
 
+.second-hero-content,
 .hero-content {
     width: 1530px;
     margin: auto;
@@ -1342,6 +1342,7 @@ iframe {
     }
 
     /* ---------------------------------- HOME HERO ---- */
+    .second-hero-content,
     .hero-content {
         width: 100%;
     }
@@ -1725,6 +1726,11 @@ iframe {
         height: calc(100% - 100px);
     }
 
+    .second-hero-content {
+        width: 100%;
+        height: 400px;
+    }
+
     .hero-title {
         font-size: 60px;
         line-height: 80px;
@@ -1751,15 +1757,21 @@ iframe {
         background-position: 42% 30%;
     }
 
-    /*----------------------- SHOP & BLOG HERO --- */
+    /*----------------------- SHOP, BLOG & CONTACT HERO --- */
+    .blog-hero,
+    .shop-hero,
+    .contact-hero {
+        height: 500px;
+    }
+
     .shop-hero-title,
     .blog-hero-title,
     .contact-hero-title {
-        top: 490px;
+        top: unset;
+        bottom: 20px;
         right: 20px;
     }
 
-    /* ---------------------------------- HERO ---- */
     .contact-hero {
         background-position: 45% center;
     }
