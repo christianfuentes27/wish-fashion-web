@@ -1333,9 +1333,90 @@ iframe {
         height: 575px;
         width: 350px;
     }
+
+    /* ---------------------------------- NEW COLLECTION ---- */
+    .new-collection {
+        width: 1200px;
+    }
+
+    .collection-container p {
+        font-size: 35px;
+    }
+
+    .sunglasses-img {
+        width: 420px;
+        height: 670px;
+    }
+
+    .shop-now-btn {
+        font-size: 16px;
+    }
+
+    .shop-now-btn::after {
+        content: '';
+        display: block;
+        border-bottom: 1px solid black;
+        width: 30px;
+        position: absolute;
+        bottom: -7px;
+        transition: all .3s ease;
+    }
+
+    .shop-now-btn:hover::after {
+        content: '';
+        border-bottom: 1px solid #E51CE1;
+        width: 55px;
+    }
+
+    .collection-part1 p {
+        margin-top: 10px;
+    }
+
+    .collection-part2 {
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+    }
+
+    .watches-img {
+        background-image: url(img/home/watch.jpg);
+        height: 300px;
+        width: 520px;
+        position: relative;
+        margin-bottom: 40px;
+        margin-left: 100px;
+    }
+
+    .clothes-img {
+        background-image: url(img/home/clothes.jpg);
+        height: 300px;
+        width: 520px;
+        position: relative;
+    }
+
+    .watches-img .over-img {
+        position: absolute;
+        top: 85px;
+        left: -100px;
+    }
+
+    .watches-img p {
+        margin-left: 20px;
+    }
+
+    .clothes-img p {
+        margin-right: 36px;
+    }
+
+    .clothes-img .over-img {
+        position: absolute;
+        top: 30px;
+        right: -100px;
+    }
 }
 
 @media only screen and (max-width: 1230px) {
+
     /* ---------------------------------- MATTER OF DETAIL ---- */
     .matter-detail {
         flex-direction: column;
@@ -1375,6 +1456,101 @@ iframe {
     .detail-2 {
         height: 575px;
         width: 50%;
+    }
+
+    /* ---------------------------------- NEW COLLECTION ---- */
+    .new-collection {
+        width: 800px;
+    }
+
+    .collection-container {
+        flex-direction: column;
+    }
+
+    .collection-container p {
+        font-size: 35px;
+    }
+
+    .collection-part1 {
+        width: 100%;
+    }
+
+    .sunglasses-img {
+        width: 620px;
+        height: 520px;
+        margin: auto;
+    }
+
+    .shop-now-btn {
+        font-size: 16px;
+    }
+
+    .collection-part1 .shop-now-btn {
+        margin-right: 85px;
+        margin-bottom: 30px;
+    }
+
+    .shop-now-btn::after {
+        content: '';
+        display: block;
+        border-bottom: 1px solid black;
+        width: 30px;
+        position: absolute;
+        bottom: -7px;
+        transition: all .3s ease;
+    }
+
+    .shop-now-btn:hover::after {
+        content: '';
+        border-bottom: 1px solid #E51CE1;
+        width: 55px;
+    }
+
+    .collection-part1 p {
+        margin-top: 10px;
+        margin-right: 85px;
+    }
+
+    .collection-part2 {
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+    }
+
+    .watches-img {
+        background-image: url(img/home/watch.jpg);
+        height: 300px;
+        width: 520px;
+        position: relative;
+        margin-bottom: 40px;
+        margin-left: 100px;
+    }
+
+    .clothes-img {
+        background-image: url(img/home/clothes.jpg);
+        height: 300px;
+        width: 520px;
+        position: relative;
+    }
+
+    .watches-img .over-img {
+        position: absolute;
+        top: 85px;
+        left: -100px;
+    }
+
+    .watches-img p {
+        margin-left: 20px;
+    }
+
+    .clothes-img p {
+        margin-right: 36px;
+    }
+
+    .clothes-img .over-img {
+        position: absolute;
+        top: 30px;
+        right: -100px;
     }
 }
 
@@ -1419,6 +1595,7 @@ iframe {
 }
 
 @media only screen and (max-width: 820px) {
+
     /* ---------------------------------- MATTER OF DETAIL ---- */
     .matter-detail {
         width: 100%;
@@ -1463,4 +1640,67 @@ iframe {
         height: 350px;
         width: 95%;
     }
+
+    /* ---------------------------------- NEW COLLECTION ---- */
+    .new-collection {
+        width: 90%;
+    }
+
+    .collection-part1, 
+    .collection-part2
+    {
+        width: 100%;
+    }
+
+    .sunglasses-img {
+        width: 100%;
+        height: 400px;
+    }
+
+    .collection-part1 p {
+        margin: 0;
+        margin-left: auto;
+    }
+
+    .collection-part1 .shop-now-btn {
+        margin: 0;
+        margin-left: auto;
+    }
+
+    .collection-part2 p span {
+        color: black;
+    }
+
+    .watches-img, 
+    .clothes-img {
+        width: 100%;
+    }
+
+    .watches-img {
+        margin-left: 0;
+        margin-top: 30px;
+    }
+
+    .clothes-img {
+        margin-top: 80px;
+    }
+
+    .watches-img .over-img {
+        top: unset;
+        left: 0;
+        bottom: -80px;
+    }
+
+    .watches-img p,
+    .clothes-img p 
+    {
+        margin: 0;
+    }
+
+    .clothes-img .over-img {
+        top: unset;
+        right: 0;
+        bottom: -80px;
+    }
+
 }
