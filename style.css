@@ -1890,6 +1890,31 @@ iframe {
     .newsletter input::placeholder {
         font-size: 16px;
     }
+
+    /* ---------------------------------- NEWSLETTER ---- */
+    .filters,
+    .categories-container {
+        display: block;
+        margin: auto;
+        text-align: center;
+    }
+
+    .categories-item {
+        margin-right: 0;
+        width: fit-content;
+        margin: auto;
+        margin-top: 10px;
+    }
+
+    .search-container {
+        margin-top: 20px;
+        justify-content: center;
+    }
+
+    .categories-item:last-child {
+        margin: auto;
+        margin-top: 10px;
+    }
 }
 
 @media only screen and (max-width: 500px) {
