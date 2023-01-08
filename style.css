@@ -1038,6 +1038,7 @@ iframe {
 /* ---------------------------------- HERO ---- */
 .blog-hero {
     background-image: url(img/blog/hero.jpg);
+    background-position: center center;
     width: 100%;
     height: 800px;
 }
@@ -1100,6 +1101,7 @@ iframe {
 
 .post-footer {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     color: black;
@@ -1113,6 +1115,7 @@ iframe {
 
 .post-info {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
 }
 
@@ -1464,6 +1467,16 @@ iframe {
     .shop {
         width: 90%;
     }
+
+    /* ---------------------------------- BLOG ---- */
+    .side-bar {
+        display: none;
+    }
+
+    .blog {
+        width: 90%;
+        padding: 60px 0 40px 0;
+    }
 }
 
 @media only screen and (max-width: 1230px) {
@@ -1735,8 +1748,9 @@ iframe {
         background-position: 42% 30%;
     }
 
-    /*----------------------- SHOP HERO --- */
-    .shop-hero-title {
+    /*----------------------- SHOP & BLOG HERO --- */
+    .shop-hero-title,
+    .blog-hero-title {
         top: 490px;
         right: 20px;
     }
@@ -1915,6 +1929,33 @@ iframe {
         margin: auto;
         margin-top: 10px;
     }
+
+    /* ---------------------------------- BLOG ---- */
+    .post-img {
+        width: 100%;
+        height: 450px;
+    }
+
+    .post-img1 {
+        background-position: 30% center;
+    }
+
+    .post-img2 {
+        background-position: 70% center;
+    }
+
+    .post-img3 {
+        background-position: 20% center;
+    }
+
+    .blog-item p,
+    .post-footer {
+        font-size: 16px;
+    }
+
+    .post-info {
+        margin-bottom: 20px;
+    }
 }
 
 @media only screen and (max-width: 500px) {
@@ -2038,4 +2079,27 @@ iframe {
     .partners-content table tr:nth-child(3) {
         display: block;
     }
+
+    /* ---------------------------------- BLOG ---- */
+    .post-footer {
+        flex-direction: column;
+        align-items: normal;
+    }
+
+    .read-btn::after {
+        margin: 0;
+    }
+    
+
+    .post-author {
+        border-right: 1px solid black;
+        width: fit-content;
+    }
+
+    
+    .post-categories,
+    .post-comments {
+        display: none;
+    }
+
 }
